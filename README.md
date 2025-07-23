@@ -4,7 +4,7 @@ A full-stack web application designed to streamline the job search process. User
 
 ## 🚀 Live Demo
 
-Frontend (Website): https://pavanijobby.netlify.app
+Frontend (Website): https://pavanijobby.netlify.app  
 Backend API: https://jobby-41mg.onrender.com
 
 ## 📁 Project Structure
