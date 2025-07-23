@@ -46,7 +46,7 @@ class Jobs extends Component {
 
     const { employeeTypeList, minimumSalary, searchInput } = this.state;
 
-    const apiUrl = `http://localhost:5000/api/jobs?employment_type=${employeeTypeList.join(
+    const apiUrl = `https://jobby-41mg.onrender.com/api/jobs?employment_type=${employeeTypeList.join(
       ","
     )}&package_per_annum=${minimumSalary}&title=${searchInput}`;
 

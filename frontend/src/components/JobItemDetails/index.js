@@ -59,7 +59,7 @@ const JobItemDetails = () => {
     setApiStatus(apiStatusConstants.inProgress);
 
     const jwtToken = Cookies.get("jwt_token");
-    const url = `http://localhost:5000/api/job-details/${id}`;
+    const url = `https://jobby-41mg.onrender.com/api/job-details/${id}`;
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

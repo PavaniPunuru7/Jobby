@@ -21,7 +21,9 @@ const ProfileDetails = () => {
     setApiStatus(apiStatusConstants.inProgress);
 
     try {
-      const response = await fetch("http://localhost:5000/api/profile");
+      const response = await fetch(
+        "https://jobby-41mg.onrender.com/api/profile"
+      );
 
       if (response.ok) {
         const data = await response.json();
