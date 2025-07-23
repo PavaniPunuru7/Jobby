@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# 💼 Jobby - Your Job Search Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application designed to streamline the job search process. Users can browse job listings, apply for positions, manage their applications, and connect with potential employers. The backend is built using Node.js, Express, and MongoDB, while the frontend is built using React.js.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Frontend (Website): https://pavanijobby.netlify.app
+Backend API: https://jobby-41mg.onrender.com
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+jobby-website/
+├── backend/ # Node.js + Express.js + MongoDB (Mongoose)  
+│ ├── models/ # Mongoose schemas (e.g., Job, User, Application)  
+│ ├── routes/ # API route handlers  
+│ ├── .env # Backend environment variables (MongoDB URI, JWT Secret)  
+│ ├── app.js # App entry (express config)  
+│ ├── server.js # Backend server  
+│ └── package.json  
+│
+├── frontend/ # React frontend  
+│ ├── src/ # React components, pages, context, etc.  
+│ ├── .env # Frontend environment variable for API URL  
+│ ├── public/  
+│ ├── package.json  
+│ └── build/ # Production build (ignored by Git)  
+│
+├── .gitignore  
+├── README.md # Project documentation  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
 
-### `npm test`
+## 🛠 Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `npm run build`
+*   Node.js
+*   Express.js
+*   MongoDB (with Mongoose)
+*   Render for deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*   React.js
+*   React Router
+*   Context API
+*   Material-UI
+*   Netlify for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Environment Variables
 
-### `npm run eject`
+### Backend `.env` (in `/backend`)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+MONGODB_URI
+JWT_SECRET
+PORT
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📚 Learnings
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Through this project, I gained valuable hands-on experience in building and deploying a full-stack job search web application. I learned how to create a responsive frontend using React.js, manage dynamic routing with React Router, and fetch data efficiently using asynchronous functions. On the backend, I developed RESTful APIs using Node.js and Express, and connected them to a MongoDB database hosted on Atlas using Mongoose. I also understood the importance of environment variables and how to manage them securely in `.env` files while avoiding exposure in version control using `.gitignore`. Deploying the backend on render and the frontend on netlify taught me how to connect multiple platforms, handle build errors, whitelist IPs, and configure environment variables for production. This project not only helped me improve my coding and debugging skills but also gave me the confidence to take on more advanced full-stack projects in the future.
 
-## Learn More
+## 🙋‍♀️ Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pavani Punuru
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📧 punurupavani7@gmail.com
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
